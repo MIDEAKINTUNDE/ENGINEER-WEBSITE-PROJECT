@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer-website</title>
+    <style>
+    body{
+        margin: 0;
+        font-family: "Oswald", sans-serif;
+        @media screen {
+            h1{
+                font-size: small;
+            }
+        }
+    }
+    #topheadercontainer{
+        border: solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 19.2px;
+        font-weight: 500;
+        color:rgb(0, 0, 0);
+        margin: 30px;
+        
+    }
+    #topheadercontainer2{
+        border: solid #FF5E15;
+        width: 100%;
+        background-color: #FF5E15;
+        margin-bottom: -40px;
+        position: sticky;
+        top: 0px;
+        
+    }
+    nav ul{
+        list-style: none;
+    }
+    nav ul li{
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 16px;
+        font-weight: 900;
+        padding: 5px;
+        
+    }
+    .top-header-nav-ul-a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .topheaderfont2{
+        font-family:"Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 200;
+
+
+        
+    }
+    nav ul li :hover{
+        color: black;
+    
+    }
+    #herosection{
+        height: 100vh;
+        margin: 0;
+    }
+    
+    section div h1 {
+        text-align: center;
+        color: white;
+        font-family: "Oswald", sans-serif;
+        font-size: 48px;
+        font-weight: 300;
+        padding-top: 200px;
+    }
+    
+    section div h1 strong{
+        font-weight: 700;
+    }
+    #whatwedo{
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family:"Oswald", sans-serif;
+        font-size: 32px;
+        font-weight: 300;
+        padding-bottom: -50px;
+    }
+    #whatwedop1{
+        color: rgb(255, 94, 21);
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    #whaatwedop2{
+        font-weight: 700;
+        padding-top: -70px;
+    }
+    #squarecontainer{
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+        font-weight: 200;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .sectionparagraph{
+        font-family: "Roboto", sans-serif ;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .squareborder{
+        border: rgb(204, 204, 204) solid 1px;
+        padding: 20px;
+        width: fit-content;
+        margin-bottom: 70px;
+    }
+    .squarenumber{
+        text-align: right;
+    }
+
+    .whychooseussection{
+        border: #09162A solid 1px;
+        background-color: #09162A;
+        color: white;
+        font-family: "Oswald", sans-serif ;
+        font-size: 20.8px;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+    }
+    .whychooseusmain{
+        color: #FF4924;
+        font-size: 20.8px;
+        font-weight: 300;
+    }
+    .h4whychooseusmain{
+        font-size: 20.8px;
+        font-weight: 300;
+
+    }
+    #pwhychooseus{
+        color: #61806D;
+        font-family: "Roboto", sans-serif ;
+        font-size: 17.6px;
+        font-weight: 300;
+    }
+    .whychooseussectioninfoheadeline{
+        font-size: 20px;
+        font-weight: 500;
+        
+        
+
+    }
+    .pwhychooseussectioninfo{
+
+        font-size: 17.6px;
+        font-weight: 300;
+    }
+    #drawingimg{
+        height: auto;
+        max-width: 100%;
+        margin-top: -30px;
+    }
+    #outsideoftheimg{
+        border: solid 0px;
+        padding: 0px 90px 90px 90px;
+
+    }
+
+
+    #getaquote{
+        border: solid white 0px;
+        background-color: white;
+        display: flex;
+    }
+
+    .enginerpicture{
+        padding-left: 100px;
+        margin-bottom: -5px;
+        
+    }
+
+
+    .getaquoteform{
+        border: solid black 1px;
+        background-color: black;
+        color: white;
+        font-family:  "Oswald", sans-serif ;
+        padding: 50px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        margin-left: 70px;
+        text-align: left;
+        width: 40%;
+       
+        
+        
+    }
+    .h3GetAQuote {
+        font-size: 20.8px;
+        font-weight: 300;
+        color: #FF4924;
+    }
+
+    .Requestaquote{
+        font-size: 17.8px;
+        font-weight: 300px;
+    }
+
+    .formholder{
+        font-family:"Roboto", sans-serif ;
+        font-size: 16px;
+        font-weight: 400px;
+        color: rgb(255, 255, 255);
+    }
+
+    .sendaMessagebutton{
+        border: solid #FF5E15 0px;
+        background-color: #FF5E15;
+        text-transform: uppercase;
+        height: 30px;
+        width: 15rem;
+        color: white;
+    }
+    .sendaMessagebutton :hover{
+        background-color: #09162A;
+    }
+
+    input[type="text"]{
+        background-color: black;
+        border: solid 0px;
+    }
+    textarea{
+        border: 0px;
+        background-color: black;
+    }
+
+
+    #ourproject{
+        border: solid 0px #09162A;
+        background-color: #09162A;
+        font-family:  "Oswald", sans-serif ;
+        
+    }
+
+
+    .ourprojectimgs{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0px;
+        /* padding-top: -100px; */
+    }
+
+
+    .ourprojecttext{
+        font-size: 20.8px;
+        font-weight: 200;
+        color: white;
+        margin-left: 100px;
+        padding-top: 30px;
+        margin-bottom: 100px;
+    }
+    .ourprojectworkimg{
+        margin-bottom: -40px;
+        margin-top: 0px;
+    }
+
+
+    .h3ourproject{
+        color: #FF5E15;
+        font-weight: 200;
+    }
+
+
+
+    #testimonialsection{
+        border: solid white 0px;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+    .Testimonialpersonimgs{
+        height: 70px;
+        padding-left: 50px;
+    }
+
+
+    .testimonialsectionheadline{
+        text-align: center;
+        padding-top: 50px;
+        font-family: "Oswald", sans-serif ;
+        font-size: 20.8px;
+        font-weight: 200;
+    }
+
+    .testimonialsectionheadline h4{
+        color: #FF5E15;
+    }
+
+
+    .cilent-testimony{
+        font-family:"Oswald", sans-serif ;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+
+    .client-name{
+        font-family: "Oswald", sans-serif;
+        font-size: 19.2px;
+        font-weight: 300;
+        color: #FF5E15;
+    }
+
+    .blogsection{
+        border: solid #f8fff8 0px;
+        background-color: #f8fff8;
+    }
+
+    /* .blog-img-hero-control{
+        padding-left: 50px;
+    } */
+
+    .admin-news{
+        padding-left: 50px;
+        
+    }
+
+    .blog-img-control{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .blog-new-update{
+        text-align: left;
+        padding-top: 50px;
+        padding-left: 70px;
+        font-family: "Oswald", sans-serif;
+        font-size: 20.8px;
+        font-weight: 200;
+
+    }
+    .blog-new-update-section-1{
+        font-size: 20.8px;
+        font-weight: 200;
+        color:#FF5E15
+    }
+
+    .blog-new-update-section-2{
+        font-size: 32px;
+        font-weight: 200;
+        line-height: 38.4px;
+
+    }
+
+
+
+    .a-top-compaines-section{
+        text-decoration: none;
+        color: black;
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+        font-weight: 400px;
+        line-height: 24px;
+    }
+
+    .Posted-under-topcompanies{
+        color: #9b9e9b;
+        font-family:"Roboto", sans-serif ;
+        font-size: 16px ;
+        font-weight: 300px;
+        line-height: 27.2px;
+    }
+
+    .news-under-topcompanies{
+        text-decoration: none;
+        color: #FF5E15;
+        font-family:"Roboto", sans-serif ;
+        font-size: 16px ;
+        font-weight: 300px;
+        line-height: 27.2px;
+       
+    }
+
+    .admin-uder-topcompanies{
+        text-decoration: none;
+        color: #FF5E15;
+        font-family:"Roboto", sans-serif ;
+        font-size: 16px ;
+        font-weight: 300px;
+        line-height: 27.2px;
+    }
+
+
+
+    #subcribe-to-our-news-letter-container{
+        border: solid #FF5E15 0px;
+        background-color: #FF5E15;
+        color: white;
+    }
+
+    .subcribe-to-our-news-letter-container-element-holder{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .subcribe-to-our-news-letter{
+        font-family:"Oswald", sans-serif;
+        font-size: 28px;
+        font-weight: 100;
+        line-height: 33.6px;
+    }
+
+    .text-subcribe-to-newsletter{
+        font-family:"Oswald", sans-serif;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 33.6px;
+        text-transform: uppercase;
+
+    }
+
+
+    .p-under-subscribe-to-newsletter{
+        font-family: "Roboto", sans-serif ;
+        font-size: 17.6px;
+        font-weight: 300;
+        line-height: 29.92px;
+        margin-top: -20px;
+    }
+
+    .subcribe-to-our-news-letter-form-control{
+        padding-top: 80px;
+        color: white;
+        
+    }
+
+
+    .subcribe-to-our-news-letter-form-control-text{
+        border: solid rgb(255, 255, 255) 10px;
+        height: 50px;
+        width: 300px;
+        color: white;
+        
+       
+    }
+
+    .subcribe-to-our-news-letter-form-control-subcribe-button{
+        height: 50px;
+        width: 100px;
+        margin-left: -5px;
+        background-color: black;
+        color: white;
+    }
+
+
+    .subcribe-to-our-news-letter-form-control-text-border{
+        border: solid white 5px;
+    }
+
+
+
+    .subcribe-to-our-news-letter-form-control-subcribe-button-main{
+        color: white;
+    }
+
+
+    .footer-container{
+        border: solid black 0px;
+        background-color: black;
+        font-family:"Roboto", sans-serif ;
+        font-size: 15px;
+        font-weight: 300;
+        
+    }
+
+    .footer-more-section{
+        color: white;
+        margin-left: 400px;
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -250px;
+        
+    }
+
+    .footer-engineer-logo-and-subtitle-main{
+        color:white;
+    }
+
+
+    .footer-engineer-logo-and-subtitle-learnmore{
+        margin-left: 110px;
+        padding-top: 70px;
+    }
+
+
+
+    .footer-subtitle-text-under-engineer-logo{
+        line-height: 25.5px;
+    }
+
+
+    .footer-learnmore-main{
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer-learnmore a:hover{
+        color: #FF5E15;
+        text-decoration: underline;
+    }
+
+    .footer-our-sub-heading-section{
+        font-family: "Oswald", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.2px;
+        text-decoration: underline #FF5E15 5px;
+    }
+
+    .footer-section-list{
+        list-style: none;
+        
+    }
+    .footer-section-list a:hover{
+        text-decoration: underline #FF5E15;
+        color: #FF4924;
+    }
+
+    .footer-list-control{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-family:"Roboto", sans-serif ;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 25.5px;
+    }
+
+    .copyrightsection{
+        font-family: "Roboto", sans-serif ;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 25.5px;
+        color: white;
+        text-align: center;
+        padding: 70px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    </style>
+    <link rel="shortcut icon" href="IMAGES/roofing_37dp_FF5E15_FILL0_wght400_GRAD0_opsz40.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="topheadercontainer">
+        <div id="topname"><img src="./IMAGES/enginerlogo.png" alt="enginerlogo"/></div>
+
+        <div id="locationicon"><span></span><img src="./IMAGES/location_on_33dp_FF5E15_FILL0_wght400_GRAD0_opsz40.png" style="height: 40px;"/></span></div>
+        <div id="toplocation"><span><strong>San Francisco </strong></span><br/><span class="topheaderfont2">st Mountain View, Fake st., CA</span></div>
+
+        <div id="callicon"><span></span><img src="./IMAGES/call_33dp_FF5E15_FILL0_wght400_GRAD0_opsz40.png" style="height: 40px;"/></span></div>
+        <div id="topphonenumber"><span><strong>000 209 392 312</strong> </span><br/> <span class="topheaderfont2">Toll free</span></div>
+
+        <div id="mailicon"><span></span><img src="./IMAGES/mail_33dp_FF5E15_FILL0_wght400_GRAD0_opsz40.png" style="height: 40px;"/></span></div>
+        <div id="topmail"><span><strong>info @gmail.com</strong></span><br/><span class="topheaderfont2">Gournadi, 1230 Bariasl</span></div>
+    </div>
+
+
+    <div id="topheadercontainer2">
+        <nav class="topheadercontainer2-nav">
+            <ul>
+                <li><a href="./index.html" class="top-header-nav-ul-a">HOME</a></li>
+                <li><a href="#" class="top-header-nav-ul-a">ABOUT US</a></li>
+                <li><a href="#"class="top-header-nav-ul-a">PRODUCT</a> </li>
+                <li><a href="#"class="top-header-nav-ul-a">TESTIMONIAL</a></li>
+                <li><a href="#"class="top-header-nav-ul-a">BLOG</a></li>
+                <li><a href="#"class="top-header-nav-ul-a">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div id="herosection" style="background: url(./IMAGES/hero_1.jpg);">
+            <h1 class="hero-text-img">We Are <strong>Leading</strong> Industry of Engineers</h1>
+
+        </div>
+
+        <div id="whatwedo">
+            <p id="whatwedop1">What We Do</p><p id="whatwedop2">We Are <strong>Leading Industry</strong>  of<br /> Engineering. We Love What We Do</p>
+
+        </div>
+        
+        <div id="squarecontainer">
+            <div class="squareborder">
+                <div class="squarenumber"><span>01</span></div>
+                <div><span> <img src="./IMAGES/engineering_47dp_FF5E15_FILL0_wght400_GRAD0_opsz48.png" alt="Engineerspng" height="60px"></span>
+               
+                <h4 class="nameheader">Professional Team</h4>
+                <p class="sectionparagraph">Gravida sodales condimentum <br> pellen tesq accumsan orci <br> quam sagittis sapie</p>
+                </div>
+            </div>
+
+
+
+            
+            <div class="squareborder">
+                <div class="squarenumber"><span>02</span></div>
+                <div><span> <img src="./IMAGES/architecture_32dp_FF5E15_FILL0_wght400_GRAD0_opsz24.png" alt="Engineerspng" height="60px"></span>
+           
+                <h4 class="nameheader">Great Ideas</h4>
+                <p class="sectionparagraph">Gravida sodales condimentum <br> pellen tesq accumsan orci <br> quam sagittis sapie</p>
+                </div>
+
+            </div>
+
+
+            <div class="squareborder">
+                <div class="squarenumber"><span>03</span></div>
+                <div><span> <img src="./IMAGES/roofing_37dp_FF5E15_FILL0_wght400_GRAD0_opsz40.png" alt="Engineerspng" height="60px"></span>
+           
+                <h4 class="nameheader">Quality Building</h4>
+                <p class="sectionparagraph">Gravida sodales condimentum <br> pellen tesq accumsan orci <br> quam sagittis sapie</p>
+                </div>
+            </div>
+
+            
+
+           <div class="squareborder">
+                <div class="squarenumber"><span>04</span></div>
+                <div><span> <img src="./IMAGES/construction_37dp_FF5E15_FILL0_wght400_GRAD0_opsz40.png" alt="Engineerspng" height="60px"></span>
+           
+                <h4 class="nameheader">Quality Works</h4>
+                <p class="sectionparagraph">Gravida sodales condimentum <br> pellen tesq accumsan orci <br> quam sagittis sapie</p>
+                </div>
+           </div>
+
+            
+
+
+
+        </div>
+
+
+        <div class="whychooseussection">
+            <div id="outsideoftheimg">
+                <div id="drawingimg">
+                   <img src="IMAGES/about_1.jpg" alt="construction drawing" height="700px" >
+                </div>
+            </div>
+            
+            <div class="whychooseussectioninfo">
+                <h3 class="whychooseusmain">Why Choose Us</h3>
+                <h4 class="h4whychooseusmain">More than <strong>50 year experience</strong> in industry</h4>
+                <p id="pwhychooseus">Reprehenderit, odio laboriosam? Blanditiis quae ullam quasi illum <br/> minima nostrum perspiciatis error <br>consequatur sit nulla.</p>
+            
+
+          
+            <div class="whychooseussectioninfo">
+                <div class="whychooseussectionallinfo"> 
+                        <span>
+                           <img src="./IMAGES/roofing_37dp_FF5E15_FILL0_wght400_GRAD0_opsz40.png" alt="roofing image" height="40px">
+                        </span> 
+                       <div>
+                           <h4 class="whychooseussectioninfoheadeline">Expert in Builings</h4>
+                           <p class="pwhychooseussectioninfo">Lorem ipsum dolor sit amet.</p>
+                       </div>
+                    
+                </div>
+                <div class="whychooseussectionallinfo"> 
+                     <span>
+                        <img src="./IMAGES/architecture_32dp_FF5E15_FILL0_wght400_GRAD0_opsz24.png" alt="compass" srcset="" height="40px">
+                     </span>
+                    <div>
+                        <h4 class="whychooseussectioninfoheadeline">Modern Design</h4>
+                        <p class="pwhychooseussectioninfo">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="whychooseussectionallinfo"> 
+                    <span>
+                        <img src="./IMAGES/note_alt_40dp_FF5E15_FILL0_wght400_GRAD0_opsz40.png" alt="note pad" srcset="" height="40px">
+                    </span>
+                   <div>
+                        <h4 class="whychooseussectioninfoheadeline">Leading In Floor Planning</h4>
+                        <p class="pwhychooseussectioninfo">Lorem ipsum dolor sit amet.</p>
+                   </div>
+                    
+
+                </div>
+
+                </div> 
+                
+
+            </div>
+        
+        </div>
+
+
+
+
+
+        <div id="getaquote">
+            <div class="enginerpicture">
+                <span>
+                    <img src="./IMAGES/img_transparent.png" alt="enginerpicture" srcset="" height="700px" >
+                </span>
+            </div>
+
+            <div class="getaquoteform">
+                <h3 class="h3GetAQuote">Get A Quote</h3>
+                <h2 class="Requestaquote">Request A <strong>Quote</strong></h2>
+                <form action="#" id="formtemplateholder">
+                    <div class="formyourname">
+                        <input type="text" class="formholder" placeholder="Your name*" required autofocus >
+                        <input type="text" class="formholder" placeholder="Phone number*" required >
+                        <hr>
+                    </div>
+
+                    <div>
+                        <input type="text" class="formholder" placeholder="Your email*" required >
+                        <input type="text" class="formholder" placeholder="Subject*" required >
+                        <hr>
+                    </div>
+
+
+                    <div>
+                        <textarea name class="formholder"  placeholder="Message*" cols="30" rows="7" spellcheck="true" style="resize: vertical;" style="max-width: 700px;"></textarea>
+                        <input type="submit" class="sendaMessagebutton" value="Send Message">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div id="ourproject">
+            
+            <div class="ourprojecttext">
+                <h3 class="h3ourproject">Our Projects</h3>
+                <h4>Explore Our <strong>Recent Projects</strong></h4>
+            </div>
+
+            <div class="ourprojectimgs">
+                <div class="img">
+                    <img src="./IMAGES/works_1.jpg" alt="works_1 img" srcset="" height="400px" class="ourprojectworkimg">
+                </div>
+                <div class="img">
+                    <img src="./IMAGES/works_2.jpg" alt="works_2 img" srcset="" height="400px" class="ourprojectworkimg">
+                </div>
+                <div>
+                    <img src="./IMAGES/works_3.jpg" alt="works_3" srcset="" height="400px" class="ourprojectworkimg">
+                </div>
+
+            </div>
+            
+
+        </div>
+
+
+
+        <div class="testimonialsectionheadline">
+            <h4 class="testimonialsectionheadline h4">Testimonial</h4>
+            <h3 class="">What People Says</h3>
+        </div>
+
+
+
+        
+
+
+
+        <div id="testimonialsection">
+            
+
+            <div class="Testimonialcontrol">
+
+                <div class="imgtestimonial">
+                <img src="./IMAGES/person_3_sq.jpg" alt="" srcset=""  class="Testimonialpersonimgs">
+                   <blockquote>
+                    <p class="cilent-testimony">
+                        &ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Provident deleniti iusto molestias, dolore vel fugiat ab <br> placeat ea? &rdquo;
+                    </p>
+                    <p class="client-name">Matt Keygen</p>
+                </blockquote>
+                </div>
+                  
+            
+                </div>
+
+            <div class="Testimonialcontrol">
+                <div  class="imgtestimonial">
+                    <img src="./IMAGES/person_4_sq.jpg" alt="" srcset="" class="Testimonialpersonimgs">
+                    <blockquote>
+                        <p class="cilent-testimony">
+                            &ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Provident deleniti iusto molestias, dolore vel fugiat ab <br> placeat ea? &rdquo;
+                        </p>
+                        <p class="client-name">Matt Keygen</p>
+                    </blockquote>
+                
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+
+        <div class="blogsection">
+            <div class="blog-new-update">
+                <h4 class="blog-new-update-section-1">Blog</h4>
+                <h3 class="blog-new-update-section-2">News &amp; Updates</h3>
+
+            </div>
+
+            <div class="admin-news">
+                <div class="blog-img-control">
+                    <div class="img-other-blog-control">
+                        <img src="./IMAGES/hero_1.jpg" alt="drawingtemplate" height="250px" class="blog-img-hero-control">
+                          <div>
+                            <h4 class="top-compaines-section"><a href="#" class="a-top-compaines-section" >Top Companies That Are Best In <br> Industrial Business</a></h4>
+                            <div class="Posted-under-topcompanies">Posted by <a href="#" class="admin-uder-topcompanies" >Admin</a> In <a href="#" class="news-under-topcompanies">News</a></div>
+                          </div>
+                    
+                    </div>
+
+                    <div class="img-other-blog-control">
+                        <img src="./IMAGES/hero_1.jpg" alt="drawingtemplate" height="250px"  class="blog-img-hero-control">
+                          <div>
+                            <h4 class="top-compaines-section"><a href="#" class="a-top-compaines-section">Top Companies That Are Best In <br>Industrial Business</a></h4>
+                            <div class="Posted-under-topcompanies">Posted by <a href="#" class="admin-uder-topcompanies" >Admin</a> In <a href="#" class="news-under-topcompanies">News</a></div>
+                          </div>
+                    </div>
+                    
+                    <div class="img-other-blog-control"> 
+                        <img src="./IMAGES/hero_1.jpg" alt="drawingtemplate" height="250px"  class="blog-img-hero-control">
+                    <div>
+                        <h4 class="top-compaines-section"><a href="#" class="a-top-compaines-section">Top Companies That Are Best In <br> Industrial Business</a></h4>
+                    </div>
+                        <div class="Posted-under-topcompanies">Posted by <a href="#" class="admin-uder-topcompanies">Admin</a> In <a href="#" class="news-under-topcompanies">News</a></div>
+
+                    </div>
+
+                   
+                
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <article>
+        <div id="subcribe-to-our-news-letter-container">
+            <div class="subcribe-to-our-news-letter-container-element-holder">
+                <div class="subcribe-to-our-news-letter">
+
+                    <h4 class="text-subcribe-to-newsletter">Subscribe To Newsletter</h4>
+                    <p class="p-under-subscribe-to-newsletter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,<br/> reprehenderit!</p>
+
+                </div>
+                <div>
+                    <form action="#" class="subcribe-to-our-news-letter-form-control">
+                        <div class="subcribe-to-our-news-letter-form-control-text-border">
+                            <input type="text" class="subcribe-to-our-news-letter-form-control-text" required style="background-color: #FF5E15;">
+                            <span class="subcribe-to-our-news-letter-form-control-subcribe-button-main"><input type="submit" class="subcribe-to-our-news-letter-form-control-subcribe-button" value="Subcribe" style="text-transform: uppercase;" ></span>
+                        </div>
+                        
+                        
+                        
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer-container">
+         <div class="footer-engineer-logo-and-subtitle-learnmore">
+            <div class="footer-engineer-logo-and-subtitle-main">
+                <img src="./IMAGES/logo2.png" alt="engineer-company-logo" srcset="">
+                <p class="footer-subtitle-text-under-engineer-logo">Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Beatae <br>nemo minima qui dolor, iusto iure.</p>
+                 <div class="footer-learnmore">
+                    <a href="#" class="footer-learnmore-main">Learn More</a>
+                 </div>
+            </div>
+
+         </div>
+
+         <div class="footer-more-section">
+            <div class="our-company">
+                <h3><span class="footer-our-sub-heading-section">OUR COMPANY</span></h3>
+                <ul class="footer-section-list">
+                    <li><a href="#" class="footer-list-control">About</a></li>
+                    <li><a href="#" class="footer-list-control">News</a></li>
+                    <li><a href="#" class="footer-list-control">Services</a></li>
+                    <li><a href="#" class="footer-list-control">Our Team</a></li>
+                    <li><a href="#" class="footer-list-control">Career</a></li>
+                    <li><a href="#" class="footer-list-control">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="our-services">
+                <h3><span class="footer-our-sub-heading-section">OUR SERVICES</span></h3>
+                <ul class="footer-section-list">
+                    <li><a href="#" class="footer-list-control">Industrial</a></li>
+                    <li><a href="#" class="footer-list-control">construction</a></li>
+                    <li><a href="#" class="footer-list-control">Remodelling</a></li>
+                </ul>
+            </div>
+
+
+            <div class="our-contact">
+                <h3><span class="footer-our-sub-heading-section">CONTACT</span></h3>
+                <ul class="footer-section-list">
+                    <li><a href="#" class="footer-list-control">Help Center</a></li>
+                    <li><a href="#" class="footer-list-control">Support Community</a></li>
+                    <li><a href="#" class="footer-list-control">Press</a></li>
+                    <li><a href="#" class="footer-list-control">FAQ</a></li>
+                    <li><a href="#" class="footer-list-control">Our Partners</a></li>
+                </ul>
+            </div>
+
+
+
+         </div>
+
+                    <div class="copyrightsection">
+                        <p>Copyright &copy;2024 All Right Reserved | Jabu Ict Project-One Mide-Akintunde</p>
+
+                    </div>
+
+        </div>
+
+        
+
+    </footer>
+</body>
+</html>
